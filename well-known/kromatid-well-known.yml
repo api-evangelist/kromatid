@@ -1,0 +1,54 @@
+generated: '2026-08-23'
+method: probed
+source: live HTTPS probes of every KromaTiD host on 2026-08-23
+note: >-
+  Every /.well-known/ path probed on both KromaTiD hosts returned 404. No document
+  was served, so NO WellKnown or SecurityTxt pointer is wired in apis.yml — this file
+  records a verified absence, not a presence. The kromatid.com 404s are the HubSpot
+  CMS 404 page; the my.kromatid.com 404s are the Drupal 11 customer-portal 404 page.
+hosts:
+- host: kromatid.com
+  note: HubSpot CMS marketing site — the company's primary web presence.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: my.kromatid.com
+  note: Drupal 11 / Cognidox customer document portal, login-gated.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

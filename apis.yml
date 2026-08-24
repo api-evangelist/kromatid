@@ -1,17 +1,38 @@
 aid: kromatid
 name: KromaTiD
-description: 'KromaTiD is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'KromaTiD (KROMASURE) is a Boulder, Colorado single-cell analysis life-science
+  tools and services company founded in 2016, built around its proprietary directional
+  Genomic Hybridization (dGH) platform. dGH probes only the parental strand of DNA,
+  which lets it resolve orientation-specific structural variation — inversions, translocations,
+  insertions and other complex rearrangements — cell by cell, at resolutions that
+  next-generation sequencing and conventional FISH cannot reach. The company sells
+  the KROMASURE platform and the dGH in-Site, dGH SCREEN, kBand and PinPoint product
+  lines as kits and as lab services, aimed at cell and gene therapy developers who
+  need insertional-mutagenesis risk assessment, genotoxicity profiling, edit optimization,
+  starting-material and donor qualification, cell-line characterization and batch-release
+  testing for CMC and FDA IND submissions. Its work has also been used by NASA for
+  spaceflight radiation research. KromaTiD publishes no developer program, no API
+  documentation and no machine-readable API contract; its only authenticated surface
+  is a Cognidox-backed customer document portal at my.kromatid.com.'
+image: https://kromatid.com/hs-fs/hubfs/logos/kromatid-logo-master.png
 url: https://raw.githubusercontent.com/api-evangelist/kromatid/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Genomics
+- Biotechnology
+- Life Sciences
+- Cell and Gene Therapy
+- Cytogenetics
+- Laboratory Services
+- Healthcare
+- Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kromatid-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://kromatid.com/
+- type: Blog
+  url: https://kromatid.com/blog
+- type: BlogRSS
+  url: https://kromatid.com/blog/rss.xml
+- type: PrivacyPolicy
+  url: https://kromatid.com/privacy-policy
+- type: Support
+  url: https://kromatid.com/contact-us
+- type: GitHubOrganization
+  url: https://github.com/kromatid
+- type: CustomerPortal
+  url: https://my.kromatid.com/user/login
+- type: LinkedIn
+  url: https://www.linkedin.com/company/kromatid
+- type: YouTube
+  url: https://www.youtube.com/@kromatideducation
+- type: Careers
+  url: https://kromatid.com/careers
+- type: Plans
+  url: plans/kromatid-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/kromatid-llms.txt
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    KromaTiD sells wet-lab dGH reagent kits and single-cell cytogenomics lab services
+    to cell and gene therapy developers, not software — its HubSpot marketing site
+    has no developer section and its only login is a Drupal/Cognidox customer document
+    portal at my.kromatid.com, so every contract-discovery path on both hosts 404s.
+  evidence:
+  - url: https://kromatid.com/openapi.json
+    status: 404
+  - url: https://kromatid.com/.well-known/agent-card.json
+    status: 404
+  - url: https://my.kromatid.com/jsonapi
+    status: 404
+  - url: https://api.github.com/orgs/kromatid/repos
+    status: 200
+  - url: https://kromatid.com/
+    status: 200
+  checked: '2026-08-23'

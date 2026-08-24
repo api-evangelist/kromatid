@@ -1,0 +1,20 @@
+generated: '2026-08-23'
+method: searched
+source: https://kromatid.com/contact-us
+plan_count: 0
+model: quote-only
+note: >-
+  KromaTiD publishes no pricing, plans, tiers or rate card anywhere on its public
+  site. /pricing, /order, /shop, /store and /request-a-quote all return 404 (probed
+  2026-08-23); the sitemap contains no pricing page. Products (KROMASURE, dGH in-Site,
+  dGH SCREEN, kBand, PinPoint) and lab services are sold through a sales conversation
+  started at /contact-us. plan_count 0 is a measured fact about what the provider
+  publishes, not a gap in this pass.
+plans: []
+evidence:
+- url: https://kromatid.com/pricing
+  status: 404
+- url: https://kromatid.com/request-a-quote
+  status: 404
+- url: https://kromatid.com/contact-us
+  status: 200
