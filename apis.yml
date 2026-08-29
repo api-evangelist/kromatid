@@ -14,6 +14,17 @@ description: 'KromaTiD (KROMASURE) is a Boulder, Colorado single-cell analysis l
   spaceflight radiation research. KromaTiD publishes no developer program, no API
   documentation and no machine-readable API contract; its only authenticated surface
   is a Cognidox-backed customer document portal at my.kromatid.com.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://kromatid.com/hs-fs/hubfs/logos/kromatid-logo-master.png
 url: https://raw.githubusercontent.com/api-evangelist/kromatid/refs/heads/main/apis.yml
 x-type: company
